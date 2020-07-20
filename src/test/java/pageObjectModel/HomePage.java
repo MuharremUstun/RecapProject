@@ -19,19 +19,11 @@ public class HomePage extends BasicFunctionalities{
     @FindBy(css = "button[value = 'Search']")
     private WebElement searchButton;
 
-    public WebElement getSearchInput() {
-        return searchInput;
+    public void sendKeysToSearchInput(String item){
+        sendKeysToElem(searchInput,item);
     }
 
-    public void setSearchInput(WebElement searchInput) {
-        this.searchInput = searchInput;
-    }
-
-    public WebElement getSearchButton() {
-        return searchButton;
-    }
-
-    public void setSearchButton(WebElement searchButton) {
-        this.searchButton = searchButton;
+    public void clickOnSearchButton(){
+        clickElement(searchButton);
     }
 }
