@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.MyDriver;
 
+import java.util.List;
+
 public class HomePage extends BasicFunctionalities{
     WebDriver driver = MyDriver.getDriver();
 
@@ -19,6 +21,7 @@ public class HomePage extends BasicFunctionalities{
     @FindBy(css = "button[value = 'Search']")
     private WebElement searchButton;
 
+
     public void sendKeysToSearchInput(String item){
         sendKeysToElem(searchInput,item);
     }
@@ -26,4 +29,6 @@ public class HomePage extends BasicFunctionalities{
     public void clickOnSearchButton(){
         clickElement(searchButton);
     }
+
+
 }

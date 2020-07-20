@@ -22,5 +22,4 @@ public class BasicFunctionalities {
         elem.sendKeys(value);
     }
 
-
 }

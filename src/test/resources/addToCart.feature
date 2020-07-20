@@ -3,3 +3,4 @@ Feature: Adding to cart on etsy website
 
     Given Go to website
     And Search for "teddy bear"
+    And Click on random item
